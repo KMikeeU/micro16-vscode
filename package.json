@@ -3,6 +3,11 @@
     "displayName": "Micro16 Lang",
     "description": "Syntax highlighting for micro16 language",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KMikeeU/micro16-vscode"
+    },
+    "author": "mikee.dev",
     "engines": {
         "vscode": "^1.62.0"
     },
