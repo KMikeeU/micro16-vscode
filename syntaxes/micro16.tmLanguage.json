@@ -11,11 +11,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.micro16",
-					"match": "(if|goto ([0-9]+|\\.\\w+))"
+					"match": "\\b(if|goto ([0-9]+|\\.\\w+))\\b"
 				},
 				{
 					"name": "keyword.control.micro16",
-					"match": "\\s+\\:\\w+$"
+					"match": ":\\w+$"
 				},
 				{
 					"name": "keyword.operator.bitwise.micro16",
@@ -23,7 +23,7 @@
 				},
 				{
 					"name": "keyword.other.micro16",
-					"match": "(wr|rd)"
+					"match": "\\b(wr|rd)\\b"
 				},
 				{
 					"name": "comment.line.number-sign.micro16",
@@ -31,11 +31,11 @@
 				},
 				{
 					"name": "constant.numeric.micro16",
-					"match": "(1|0)"
+					"match": "\\b(1|0)\\b"
 				},
 				{
 					"name": "storage.type.micro16",
-					"match": "(R(10|[0-9])|PC|MBR|MAR)"
+					"match": "\\b(R(10|[0-9])|PC|MBR|MAR)\\b"
 				},
 				{
 					"name": "keyword.operator.assign.micro16",
@@ -47,7 +47,7 @@
 				},
 				{
 					"name": "entity.name.function.micro16",
-					"match": "(lsh|rsh)"
+					"match": "\\b(lsh|rsh)\\b"
 				}
 			]
 		}
