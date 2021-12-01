@@ -1,0 +1,31 @@
+{
+    "name": "micro16-lang",
+    "displayName": "Micro16 Lang",
+    "description": "Syntax highlighting for micro16 language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "micro16",
+            "aliases": ["Micro-16", "micro16"],
+            "extensions": [".m16"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "micro16",
+            "scopeName": "source.m16",
+            "path": "./syntaxes/micro16.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "micro16",
+                "path": "./snippets.json"
+            }
+        ]
+    }
+}

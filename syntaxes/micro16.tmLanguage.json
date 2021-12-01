@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Micro-16",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.micro16",
+					"match": "(if|goto ([0-9]+|\\.\\w+))"
+				},
+				{
+					"name": "keyword.control.micro16",
+					"match": "\\s+\\:\\w+$"
+				},
+				{
+					"name": "keyword.operator.bitwise.micro16",
+					"match": "(\\&|~)"
+				},
+				{
+					"name": "keyword.other.micro16",
+					"match": "(wr|rd)"
+				},
+				{
+					"name": "comment.line.number-sign.micro16",
+					"match": "#.*$"
+				},
+				{
+					"name": "constant.numeric.micro16",
+					"match": "(1|0)"
+				},
+				{
+					"name": "storage.type.micro16",
+					"match": "(R(10|[0-9])|PC|MBR|MAR)"
+				},
+				{
+					"name": "keyword.operator.assign.micro16",
+					"match": "<-"
+				},
+				{
+					"name": "keyword.operator.arithmetic.micro16",
+					"match": "(\\+|\\-)"
+				},
+				{
+					"name": "entity.name.function.micro16",
+					"match": "(lsh|rsh)"
+				}
+			]
+		}
+	},
+	
+	"scopeName": "source.m16"
+}

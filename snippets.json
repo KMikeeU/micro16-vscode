@@ -1,0 +1,26 @@
+{
+	"subtract": {
+		"scope": "micro16",
+		"prefix": ".subtract",
+		"body": [
+			"## R$1 = R$2 - R$3",
+			"## Subtract R$3 from R$2 and write to R$1",
+			"R$1 <- ~R$3",
+			"R$1 <- R$1+1",
+			"R$1 <- R$1+R$2"
+		],
+		"description": "Subtract two numbers"
+	},
+	"write": {
+		"scope": "micro16",
+		"prefix": ".write",
+		"body": [
+			"## R$1 -> Memory[R$2]",
+			"## Write R$1 to address R$2 in memory",
+			"MAR<-R$2;",
+			"MBR<-R$1;wr",
+			"wr"
+		],
+		"description": "Write a number to memory"
+	}
+}
