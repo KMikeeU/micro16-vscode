@@ -2,7 +2,7 @@
     "name": "micro16-lang",
     "displayName": "Micro16 Lang",
     "description": "Syntax highlighting for micro16 language",
-    "version": "1.1",
+    "version": "1.1.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/KMikeeU/micro16-vscode"
