@@ -15,17 +15,45 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "micro16",
-            "aliases": ["Micro-16", "micro16"],
-            "extensions": [".m16"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "micro16",
-            "scopeName": "source.m16",
-            "path": "./syntaxes/micro16.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "micro16",
+                "aliases": [
+                    "Micro-16",
+                    "micro16",
+                    "m16"
+                ],
+                "extensions": [
+                    ".m16"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "micro16-memory",
+                "aliases": [
+                    "Micro-16 Memory",
+                    "micro16-memory",
+                    "m16m"
+                ],
+                "extensions": [
+                    ".m16m",
+                    ".m16m.txt"
+                ],
+                "configuration": "./language-configuration-memory.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "micro16",
+                "scopeName": "source.m16",
+                "path": "./syntaxes/micro16.tmLanguage.json"
+            },
+            {
+                "language": "micro16-memory",
+                "scopeName": "source.m16m",
+                "path": "./syntaxes/micro16-memory.tmLanguage.json"
+            }
+        ],
         "snippets": [
             {
                 "language": "micro16",

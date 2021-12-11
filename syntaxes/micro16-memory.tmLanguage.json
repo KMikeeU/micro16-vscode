@@ -1,0 +1,29 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Micro-16",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "storage.type.micro16",
+					"match": "^([0-9A-F]{4}|[01]{16}|[0-9]+)\\b"
+				},
+                {
+					"name": "constant.numeric.micro16",
+					"match": "\\b([0-9A-F]{4}|[01]{16}|[0-9]+)$"
+				},
+                {
+					"name": "comment.line.number-sign.micro16-memory",
+					"match": "^#.*"
+				}
+			]
+		}
+	},
+	
+	"scopeName": "source.m16m"
+}
